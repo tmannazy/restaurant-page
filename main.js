@@ -1,0 +1,1 @@
+console.log("I just successfully set up my first webpack project :)!");
