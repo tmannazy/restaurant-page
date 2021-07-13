@@ -1,5 +1,9 @@
 body {
-    background: url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg');
+    background: radial-gradient(circle closest-side at 700px 170px, rgba(223, 218, 218, 0.3), rgba(29, 8, 17, 0.9)),
+        /* radial-gradient(circle at right, rgba(46, 1, 1, 0.6), rgb(234, 241, 234) 10%), */
+        url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg');
+    /* background: radial-gradient(circle closest-side, top right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg'); */
+    background-size: cover;
 }
 
 h1 {
@@ -14,11 +18,19 @@ ul {
 }
 
 
-li {
+header li {
     display: inline;
 }
 
-li a {
+header a {
     padding: 8px;
     background-color: #dddddd;
+}
+
+.welcome-info p {
+    color: antiquewhite;
+}
+
+.location-info {
+    color: #dddddd;
 }
