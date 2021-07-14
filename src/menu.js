@@ -6,27 +6,30 @@ const menuPage = () => {
     const menuItems = [
         {
             item: 'jollof rice',
-            pic: './jollof.jpeg',
+            pic: './979b6738e304bf6b8d61.jpeg',
             amount: 'N' + 100
         },
         {
             item: 'beans',
-            pic: './beans.jpeg',
+            pic: './7261376b0f85b2df4def.jpeg',
             amount: 'N' + 150
         },
         {
             item: 'abacha',
-            pic: '.src/abacha.jpeg',
+            pic: './78ec4d764f6517ff367b.jpeg',
             amount: 'N' + 300
         }
     ];
 
+    menuDiv.className = 'menu';
     menuItems.forEach(items => {
-        const div = document.createElement('div');
-        let itemSpan = document.createElement('span');
-        let priceSpan = document.createElement('span');
-        let itemImg = document.createElement('img');
-        const listedItems = MenuFactory(items.item, items.pic, items.amount);
+        const div = document.createElement('div'),
+            listedItems = MenuFactory(items.item, items.pic, items.amount);
+        let itemSpan = document.createElement('span'),
+            priceSpan = document.createElement('span'),
+            itemImg = document.createElement('img');
+
+        div.className = 'menu-item';
         itemSpan.textContent = listedItems.foodItem;
         priceSpan.textContent = listedItems.price;
         itemImg.src = listedItems.img;
