@@ -7,17 +7,32 @@ const menuPage = () => {
         {
             item: 'jollof rice',
             pic: './979b6738e304bf6b8d61.jpeg',
-            amount: 'N' + 100
+            amount: '₦' + 100
         },
         {
             item: 'beans',
             pic: './7261376b0f85b2df4def.jpeg',
-            amount: 'N' + 150
+            amount: '₦' + 150
         },
         {
             item: 'abacha',
             pic: './78ec4d764f6517ff367b.jpeg',
-            amount: 'N' + 300
+            amount: '₦' + 300
+        },
+        {
+            item: 'jollof rice',
+            pic: './979b6738e304bf6b8d61.jpeg',
+            amount: '₦' + 100
+        },
+        {
+            item: 'beans',
+            pic: './7261376b0f85b2df4def.jpeg',
+            amount: '₦' + 150
+        },
+        {
+            item: 'abacha',
+            pic: './78ec4d764f6517ff367b.jpeg',
+            amount: '₦' + 300
         }
     ];
 
