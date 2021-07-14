@@ -1,5 +1,8 @@
 import { homePage } from "./home";
 import { menuPage } from "./menu";
+import './jollof.jpeg';
+import './abacha.jpeg';
+import './beans.jpeg';
 import './style.css';
 
 
