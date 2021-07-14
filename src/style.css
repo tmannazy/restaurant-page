@@ -34,3 +34,7 @@ header a {
 .location-info {
     color: #dddddd;
 }
+
+.menu-item span {
+    color: beige;
+}
