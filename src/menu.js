@@ -36,11 +36,11 @@ const menuPage = () => {
         }
     ];
 
-    menuDiv.className = 'menu';
+    menuDiv.className = 'menu-container';
     menuItems.forEach(items => {
         const div = document.createElement('div'),
-            listedItems = MenuFactory(items.item, items.pic, items.amount);
-        let itemSpan = document.createElement('span'),
+            listedItems = MenuFactory(items.item, items.pic, items.amount),
+            itemSpan = document.createElement('span'),
             priceSpan = document.createElement('span'),
             itemImg = document.createElement('img');
 
