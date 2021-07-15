@@ -1,6 +1,5 @@
 const homePage = () => {
-    const h1 = document.createElement('h1'),
-        welcomeDiv = document.createElement('div'),
+    const welcomeDiv = document.createElement('div'),
         welcomeNote = document.createElement('p'),
         slogan = document.createElement('p'),
         orderBtn = document.createElement('button'),
@@ -10,7 +9,6 @@ const homePage = () => {
         operationDays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
         homePageContainer = document.createElement('main');
 
-    h1.textContent = 'kuizin!';
     welcomeNote.textContent = 'Welcome to the best restaurant in town with the best kuizins that meet your sought-after needs. Kindly go through our menu for more.';
     slogan.textContent = 'Cuisines That Satisfy';
     orderBtn.textContent = 'Order Now';
@@ -33,7 +31,7 @@ const homePage = () => {
 
     welcomeDiv.append(welcomeNote, slogan, orderBtn);
     locDiv.append(locDivAddress, locDivList);
-    homePageContainer.append(h1, welcomeDiv, locDiv);
+    homePageContainer.append(welcomeDiv, locDiv);
     return homePageContainer;
 }
 
