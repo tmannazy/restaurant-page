@@ -13,6 +13,7 @@ const homePage = () => {
     slogan.textContent = 'Cuisines That Satisfy';
     orderBtn.textContent = 'Order Now';
     locDivAddress.textContent = '#1 University of Biafra Road, Enugwu, Biafra.'
+    orderBtn.className = 'order-btn';
     welcomeDiv.className = 'welcome-info';
     locDiv.className = 'location-info';
 
