@@ -30,31 +30,34 @@ navItems.forEach(item => {
 });
 content.append(header, homePage(), menuPage());
 
-const homeBtn = document.getElementById('home'),
-    menuBtn = document.getElementById('menu'),
-    contactBtn = document.getElementById('contact'),
+const navPages = Array.from(document.querySelectorAll('li')),
     mainContainer = document.querySelector('main'),
-    menuContainer = document.querySelector('.menu-container');
+    menuContainer = document.querySelector('.menu-container'),
+    contactContainer = document.querySelector('.contact');
 
 
 const loadPage = () => {
     menuContainer.style.display = 'none';
 }
 
-const loadHome = () => {
-    menuContainer.style.display = 'none';
-    mainContainer.style.display = 'block';
+const pageContents = event => {
+    const navClicked = event.target.closest('li');
+    if (navClicked.id === 'home') {
+        menuContainer.style.display = 'none';
+        mainContainer.style.display = 'block';
+    } else if (navClicked.id === 'menu') {
+        mainContainer.style.display = 'none';
+        menuContainer.style.display = 'flex';
+    } else if (navClicked.id = 'contact') {
+        mainContainer.style.display = 'none';
+        menuContainer.style.display = 'flex';
+    }
+}
 
-}
-const loadMenu = () => {
-    mainContainer.style.display = 'none';
-    menuContainer.style.display = 'flex';
-}
 
 // bindEvents
 document.addEventListener('DOMContentLoaded', loadPage);
-homeBtn.addEventListener('click', loadHome);
-menuBtn.addEventListener('click', loadMenu);
+navPages.map(item => item.addEventListener('click', pageContents));
 
 
 
