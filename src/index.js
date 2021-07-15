@@ -24,7 +24,8 @@ content.append(header, homePage(), menuPage(), contactPage(), footer);
 // cacheDOM
 const mainContainer = document.querySelector('main'),
     menuContainer = document.querySelector('.menu-container'),
-    contactContainer = document.querySelector('.contact-container');
+    contactContainer = document.querySelector('.contact-container'),
+    orderBtn = document.querySelector('.welcome-info button');
 
 
 // populate navbar
@@ -67,9 +68,16 @@ const pageContents = event => {
     }
 }
 
+const orderMenu = () => {
+    contactContainer.style.display = 'none';
+    mainContainer.style.display = 'none';
+    menuContainer.style.display = 'flex';
+}
+
 
 // bindEvents
 document.addEventListener('DOMContentLoaded', loadPage);
+orderBtn.addEventListener('click', orderMenu);
 navPages.map(item => item.addEventListener('click', pageContents));
 
 
