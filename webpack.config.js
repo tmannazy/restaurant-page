@@ -15,7 +15,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Kuizin!',
             template: '/src/index.html'
         }),
     ],
