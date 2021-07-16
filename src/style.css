@@ -71,8 +71,6 @@ header a {
     padding: 8px 30px;
     text-decoration: none;
     margin: 0 10px;
-    /* background-color: #d8be07; */
-    /* color: #648813; */
     font-family: 'Pacifico', cursive;
     font-size: 1.2rem;
     font-weight: 800;
@@ -116,6 +114,53 @@ header a:active {
     font-family: 'Sacramento', cursive;
 }
 
+.welcome-info span {
+    font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #EDE5CC;
+    background-color: #a9040a;
+    padding: 5px 10px;
+}
+
+.motto {
+    color: #EDE5CC;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.order-btn {
+    padding: 10px;
+    color: #a9040a;
+    background-color: #EBD489;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.order-btn:hover {
+    color: #EDE5CC;
+    background-color: #a9040a;
+    text-decoration: underline;
+    border: 2px groove #EBD489;
+
+}
+
+.order-btn:active {
+    color: #a9040a;
+    background-color: #EDE5CC;
+    border: none;
+    box-shadow: inset 2px 3px 1px 1px rgba(0, 0, 0, 0.7),
+        2px -2px 4px -6px rgba(250, 247, 248, 0.623);
+}
+
 .location-info {
     color: #dddddd;
 }
@@ -139,6 +184,5 @@ header a:active {
 
 .menu-item>span {
     color: hsl(287, 39%, 95%);
-    /* display: block; */
     text-align: center;
 }
