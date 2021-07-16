@@ -6,7 +6,7 @@ import './abacha.jpeg';
 import './beans.jpeg';
 import './style.css';
 
-
+// create elements and populate
 const content = document.getElementById('content'),
     header = document.createElement('header'),
     footer = document.createElement('footer'),
@@ -30,7 +30,7 @@ const mainContainer = document.querySelector('main'),
     stickPos = stickyHeader.offsetTop;
 
 
-// populate navbar
+// populate navbar content
 navItems.forEach(item => {
     const li = document.createElement('li'),
         a = document.createElement('a');
@@ -43,8 +43,6 @@ navItems.forEach(item => {
     nav.appendChild(ul);
     header.append(h1, nav);
 });
-
-const navPages = Array.from(document.querySelectorAll('li'));
 
 
 // callBack Functions
@@ -90,6 +88,7 @@ const pageScroll = () => {
 document.addEventListener('DOMContentLoaded', loadPage);
 window.addEventListener('scroll', pageScroll);
 orderBtn.addEventListener('click', orderMenu);
+const navPages = Array.from(document.querySelectorAll('li'));
 navPages.map(item => item.addEventListener('click', pageContents));
 
 
