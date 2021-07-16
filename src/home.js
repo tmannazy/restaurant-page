@@ -9,7 +9,7 @@ const homePage = () => {
         operationDays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
         homePageContainer = document.createElement('main');
 
-    welcomeNote.innerHTML = `Welcome to the <span>best</span> restaurant in town with the best cuisines that meet your sought-after needs. Kindly go through our menu for more.`;
+    welcomeNote.innerHTML = `Welcome to the <span>best</span> restaurant in town with delicious cuisines that meet your sought-after needs. Kindly go through our menu for more.`;
     slogan.textContent = 'kuizins to satisfy you!';
     orderBtn.textContent = 'order now!';
     locDivAddress.textContent = '#1 University of Biafra Road, Enugwu, Biafra.'
@@ -22,10 +22,10 @@ const homePage = () => {
         let firstGroup, secondGroup;
         const li = document.createElement('li');
         if (i === 1) {
-            firstGroup = `${operationDays[4]} - ${operationDays[6]}: 8:00 a.m. - 11:00 p.m.`;
+            firstGroup = `${operationDays[4]} - ${operationDays[6]}: 8:00 AM - 11:00 PM`;
             li.textContent = firstGroup;
         } else {
-            secondGroup = `${operationDays[0]} - ${operationDays[3]}: 7:00 a.m. - 9:00 p.m.`;
+            secondGroup = `${operationDays[0]} - ${operationDays[3]}: 7:00 AM - 9:00 PM`;
             li.textContent = secondGroup;
         }
         locDivList.appendChild(li);
