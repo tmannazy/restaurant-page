@@ -10,9 +10,10 @@ const homePage = () => {
         homePageContainer = document.createElement('main');
 
     welcomeNote.textContent = 'Welcome to the best restaurant in town with the best cuisines that meet your sought-after needs. Kindly go through our menu for more.';
-    slogan.textContent = 'Cuisines That Satisfy';
+    slogan.textContent = 'Kuizins To Satisfy!';
     orderBtn.textContent = 'Order Now';
     locDivAddress.textContent = '#1 University of Biafra Road, Enugwu, Biafra.'
+    slogan.className = 'motto';
     orderBtn.className = 'order-btn';
     welcomeDiv.className = 'welcome-info';
     locDiv.className = 'location-info';
