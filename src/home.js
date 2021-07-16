@@ -9,9 +9,9 @@ const homePage = () => {
         operationDays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
         homePageContainer = document.createElement('main');
 
-    welcomeNote.textContent = 'Welcome to the best restaurant in town with the best cuisines that meet your sought-after needs. Kindly go through our menu for more.';
-    slogan.textContent = 'Kuizins To Satisfy!';
-    orderBtn.textContent = 'Order Now';
+    welcomeNote.innerHTML = `Welcome to the <span>best</span> restaurant in town with the best cuisines that meet your sought-after needs. Kindly go through our menu for more.`;
+    slogan.textContent = 'kuizins to satisfy you!';
+    orderBtn.textContent = 'order now!';
     locDivAddress.textContent = '#1 University of Biafra Road, Enugwu, Biafra.'
     slogan.className = 'motto';
     orderBtn.className = 'order-btn';
