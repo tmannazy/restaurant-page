@@ -84,7 +84,6 @@ const pageScroll = () => {
         stickyHeader.classList.remove('sticky');
         stickyHeader.setAttribute('style', 'background: #a9040a75');
     }
-
 }
 
 // bindEvents
