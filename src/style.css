@@ -12,6 +12,9 @@ body {
         url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg');
     /* background: radial-gradient(circle closest-side, top right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg'); */
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -97,7 +100,7 @@ header a:active {
     justify-content: center;
     align-content: center;
     width: 500px;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     padding: 50px;
     background-color: #d8c0079b;
     border: 2px groove whitesmoke;
@@ -150,7 +153,6 @@ header a:active {
     background-color: #a9040a;
     text-decoration: underline;
     border: 2px groove #EBD489;
-
 }
 
 .order-btn:active {
@@ -162,7 +164,48 @@ header a:active {
 }
 
 .location-info {
-    color: #dddddd;
+    border: 1px solid rgba(238, 12, 12, 0.9);
+    background-color: #ede5cc67;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+}
+
+.location-info p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #D8BE07;
+    background-color: #a9040a;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.location-info ul {
+    align-self: center;
+}
+
+.location-info li {
+    text-transform: capitalize;
+    color: #EBD489;
+}
+
+footer {
+    /* position: relative; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
 }
 
 .menu-container {
