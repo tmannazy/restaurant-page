@@ -76,7 +76,7 @@ const orderMenu = () => {
     menuContainer.style.display = 'flex';
 }
 
-const scrollPage = () => {
+const pageScroll = () => {
     if (Math.round(window.pageYOffset) > stickPos) {
         stickyHeader.classList.add('sticky');
         stickyHeader.setAttribute('style', 'background: #a9040a');
@@ -89,7 +89,7 @@ const scrollPage = () => {
 
 // bindEvents
 document.addEventListener('DOMContentLoaded', loadPage);
-window.addEventListener('scroll', scrollPage);
+window.addEventListener('scroll', pageScroll);
 orderBtn.addEventListener('click', orderMenu);
 navPages.map(item => item.addEventListener('click', pageContents));
 
