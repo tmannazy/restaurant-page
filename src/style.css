@@ -164,8 +164,6 @@ header a:active {
 }
 
 .location-info {
-    border: 1px solid rgba(238, 12, 12, 0.9);
-    background-color: #ede5cc67;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -174,13 +172,16 @@ header a:active {
     width: 500px;
     margin: 20px auto;
     padding: 50px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 6px 0 rgba(0, 0, 0, 0.92),
+        -8px 2px 9px 0 rgba(255, 255, 255, 0.1);
 }
 
 .location-info p {
     margin-bottom: 15px;
     font-size: 1.2rem;
     color: #D8BE07;
-    background-color: #a9040a;
+    text-shadow: 5px 13px 8px rgba(9, 0, 20, 0.9);
     padding: 10px;
     font-size: 1.4rem;
     font-weight: 800;
@@ -193,6 +194,10 @@ header a:active {
 
 .location-info li {
     text-transform: capitalize;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-shadow: 6px 7px 8px rgba(9, 0, 20, 0.8);
     color: #EBD489;
 }
 
