@@ -25,7 +25,9 @@ content.append(header, homePage(), menuPage(), contactPage(), footer);
 const mainContainer = document.querySelector('main'),
     menuContainer = document.querySelector('.menu-container'),
     contactContainer = document.querySelector('.contact-container'),
-    orderBtn = document.querySelector('.welcome-info button');
+    orderBtn = document.querySelector('.welcome-info button'),
+    stickyHeader = document.querySelector('header'),
+    stickPos = stickyHeader.offsetTop;
 
 
 // populate navbar
@@ -74,9 +76,20 @@ const orderMenu = () => {
     menuContainer.style.display = 'flex';
 }
 
+const scrollPage = () => {
+    if (Math.round(window.pageYOffset) > stickPos) {
+        stickyHeader.classList.add('sticky');
+        stickyHeader.setAttribute('style', 'background: #a9040a');
+    } else {
+        stickyHeader.classList.remove('sticky');
+        stickyHeader.setAttribute('style', 'background: #a9040a75');
+    }
+
+}
 
 // bindEvents
 document.addEventListener('DOMContentLoaded', loadPage);
+window.addEventListener('scroll', scrollPage);
 orderBtn.addEventListener('click', orderMenu);
 navPages.map(item => item.addEventListener('click', pageContents));
 
