@@ -16,9 +16,10 @@ const content = document.getElementById('content'),
     h1 = document.createElement('h1'),
     navItems = ['home', 'menu', 'contact'];
 
-footerInfo.textContent = 'page created by tmannazy';
+footerInfo.innerHTML = `Created by Tmannazy <a href='https://www.github.com/tmannazy' target="_blank"><i class="fab fa-github"></i></a>`;
 footer.append(footerInfo);
-content.append(header, homePage(), menuPage(), contactPage(), footer);
+content.append(header, homePage(), menuPage(), contactPage());
+
 
 
 // cacheDOM
@@ -27,7 +28,9 @@ const mainContainer = document.querySelector('main'),
     contactContainer = document.querySelector('.contact-container'),
     orderBtn = document.querySelector('.welcome-info button'),
     stickyHeader = document.querySelector('header'),
+    body = document.querySelector('body'),
     stickPos = stickyHeader.offsetTop;
+body.insertBefore(footer, body.nextElementSibling);
 
 
 // populate navbar content
