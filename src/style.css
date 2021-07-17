@@ -8,16 +8,12 @@
 
 body {
     background: radial-gradient(circle closest-side at 700px 170px, rgba(223, 218, 218, 0.5), rgba(29, 8, 17, 0.9)),
-        /* radial-gradient(circle at right, rgba(46, 1, 1, 0.6), rgb(234, 241, 234) 10%), */
         url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg');
-    /* background: radial-gradient(circle closest-side, top right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg'); */
     background-size: cover;
 }
 
 #content {
-    min-height: calc(100vh - 70px);
-    /* min-height: 100%; */
-    /* margin-bottom: -50px; */
+    min-height: calc(100vh - 50px);
 }
 
 header {
@@ -81,7 +77,6 @@ header a {
     font-size: 1.2rem;
     font-weight: 800;
     text-transform: capitalize;
-
 }
 
 header a:link,
@@ -205,15 +200,11 @@ header a:active {
 }
 
 footer {
-    /* position: fixed; */
-    /* left: 0; */
-    /* bottom: 0; */
     width: 100%;
     background-color: red;
     color: white;
     text-align: center;
     padding: 15px;
-    /* margin-top: -50px; */
     height: 50px;
 }
 
@@ -222,7 +213,7 @@ footer {
     background: rgba(184, 128, 162, 0.3);
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 200px;
+    margin: 100px 200px;
     border: 1px solid #aaa;
     border-radius: 15px;
 }
