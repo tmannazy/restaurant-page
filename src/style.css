@@ -12,9 +12,12 @@ body {
         url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg');
     /* background: radial-gradient(circle closest-side, top right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg'); */
     background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+}
+
+#content {
+    min-height: calc(100vh - 70px);
+    /* min-height: 100%; */
+    /* margin-bottom: -50px; */
 }
 
 header {
@@ -202,15 +205,16 @@ header a:active {
 }
 
 footer {
-    /* position: relative; */
-    left: 0;
-    bottom: 0;
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
     width: 100%;
     background-color: red;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: auto;
+    /* margin-top: -50px; */
+    height: 50px;
 }
 
 .menu-container {
@@ -223,12 +227,10 @@ footer {
     border-radius: 15px;
 }
 
-
 .menu-item {
     margin: 50px 50px 0;
     background-color: blueviolet;
 }
-
 
 .menu-item>span {
     color: hsl(287, 39%, 95%);
