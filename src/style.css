@@ -201,11 +201,26 @@ header a:active {
 
 footer {
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: #a9040a;
+    color: #EDE5CC;
     text-align: center;
     padding: 15px;
-    height: 50px;
+    height: 70px;
+
+
+}
+
+footer p {
+    padding-bottom: 15px;
+    /* color: #EDE5CC; */
+    font-weight: 800;
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+    text-shadow: 6px 7px 8px rgba(9, 0, 20, 0.8);
+}
+
+footer i {
+    color: #EDE5CC;
 }
 
 .menu-container {
