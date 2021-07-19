@@ -201,22 +201,18 @@ header a:active {
 
 footer {
     width: 100%;
-    background-color: #a9040a;
+    background-color: #a9040a75;
     color: #EDE5CC;
     text-align: center;
-    padding: 15px;
     height: 70px;
-
-
 }
 
 footer p {
-    padding-bottom: 15px;
-    /* color: #EDE5CC; */
     font-weight: 800;
     font-family: 'Pacifico', cursive;
     font-size: x-large;
     text-shadow: 6px 7px 8px rgba(9, 0, 20, 0.8);
+    padding-top: 10px;
 }
 
 footer i {
@@ -225,20 +221,41 @@ footer i {
 
 .menu-container {
     display: flex;
-    background: rgba(184, 128, 162, 0.3);
+    background: rgba(19, 10, 15, 0.25);
+    cursor: pointer;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 100px 200px;
-    border: 1px solid #aaa;
     border-radius: 15px;
+    padding-bottom: 30px;
+    box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.92),
+        9px 6px 15px 5px rgba(255, 255, 255, 0.5);
 }
 
 .menu-item {
     margin: 50px 50px 0;
-    background-color: blueviolet;
+    background-color: #a9040a75;
+    border: 5px double wheat;
+}
+
+.menu-item img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 120px;
+}
+
+.menu-item:hover {
+    box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.92),
+        9px 6px 25px 0 rgba(255, 255, 255, 0.5);
 }
 
 .menu-item>span {
-    color: hsl(287, 39%, 95%);
+    display: block;
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    color: #EBD489;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-align: center;
 }
