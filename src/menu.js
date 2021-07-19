@@ -10,7 +10,7 @@ const menuPage = () => {
             amount: '₦' + 100
         },
         {
-            item: 'beans',
+            item: 'beans & plantain',
             pic: './7261376b0f85b2df4def.jpeg',
             amount: '₦' + 150
         },
