@@ -4,6 +4,9 @@ import { contactPage } from './contact';
 import './jollof.jpeg';
 import './abacha.jpeg';
 import './beans.jpeg';
+import './edikang_ikong.jpg';
+import './egusi_soup.jpg';
+import './okro_soup.webp';
 import './style.css';
 
 // create elements and populate
