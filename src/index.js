@@ -75,7 +75,7 @@ const pageContents = event => {
             }
         } return;
     }
-    else if (navClicked.id === 'menu' || order) {
+    else if (navClicked.id === 'menu') {
         if (menuContainer === null) {
             if (contactContainer !== null) {
                 content.removeChild(contactContainer);
