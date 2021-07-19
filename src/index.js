@@ -22,18 +22,13 @@ const content = document.getElementById('content'),
 footerInfo.innerHTML = `Created by Tmannazy <a href='https://www.github.com/tmannazy' target="_blank"><i class="fab fa-github"></i></a>`;
 footer.append(footerInfo);
 content.append(header, homePage());
-// content.append(header, homePage(), menuPage(), contactPage());
-
 
 
 // cacheDOM
-// const mainContainer = document.querySelector('main'),
-//     menuContainer = document.querySelector('.menu-container'),
-//     contactContainer = document.querySelector('.contact-container'),
-const orderBtn = document.querySelector('.welcome-info button'),
+const orderBtn = document.querySelector('button.order-btn'),
     stickyHeader = document.querySelector('header'),
-    body = document.body,
-    stickPos = stickyHeader.offsetTop;
+    stickPos = stickyHeader.offsetTop,
+    body = document.body;
 body.insertBefore(footer, body.nextElementSibling);
 
 
@@ -53,53 +48,52 @@ navItems.forEach(item => {
 
 
 // callBack Functions
-// const loadPage = () => {
-//     menuContainer.style.display = 'none';
-//     contactContainer.style.display = 'none';
-// }
-
 const pageContents = event => {
     const mainContainer = content.querySelector('main'),
         menuContainer = content.querySelector('.menu-container'),
-        contactContainer = content.querySelector('.contact-container'),
-        order = event,
-        navClicked = event.target.closest('li');
-    if (navClicked.id === 'home') {
-        if (mainContainer === null) {
-            if (menuContainer !== null) {
-                content.removeChild(menuContainer);
-                content.appendChild(homePage());
-            } else if (contactContainer !== null) {
-                content.removeChild(contactContainer);
-                content.appendChild(homePage());
-            }
-        } return;
-    }
-    else if (navClicked.id === 'menu') {
-        if (menuContainer === null) {
-            if (contactContainer !== null) {
-                content.removeChild(contactContainer);
-                content.appendChild(menuPage());
-            } else if (mainContainer !== null) {
-                content.removeChild(mainContainer);
-                content.appendChild(menuPage());
+        contactContainer = content.querySelector('.contact-container');
+    if (event === undefined) {
+        content.removeChild(mainContainer);
+        content.appendChild(menuPage());
+    } else {
+        const navClicked = event.target.closest('li');
+        if (navClicked.id === 'home') {
+            if (mainContainer === null) {
+                if (menuContainer !== null) {
+                    content.removeChild(menuContainer);
+                    content.appendChild(homePage());
+                } else if (contactContainer !== null) {
+                    content.removeChild(contactContainer);
+                    content.appendChild(homePage());
+                }
             } return;
         }
-    } else if (navClicked.id = 'contact') {
-        if (contactContainer === null) {
-            if (mainContainer !== null) {
-                content.removeChild(mainContainer);
-                content.appendChild(contactPage());
-            } else if (menuContainer !== null) {
-                content.removeChild(menuContainer);
-                content.appendChild(contactPage());
+        else if (navClicked.id === 'menu') {
+            if (menuContainer === null) {
+                if (contactContainer !== null) {
+                    content.removeChild(contactContainer);
+                    content.appendChild(menuPage());
+                } else if (mainContainer !== null) {
+                    content.removeChild(mainContainer);
+                    content.appendChild(menuPage());
+                } return;
             }
-        } return;
+        } else if (navClicked.id = 'contact') {
+            if (contactContainer === null) {
+                if (mainContainer !== null) {
+                    content.removeChild(mainContainer);
+                    content.appendChild(contactPage());
+                } else if (menuContainer !== null) {
+                    content.removeChild(menuContainer);
+                    content.appendChild(contactPage());
+                }
+            } return;
+        }
     }
 }
 
 const orderMenu = () => {
-    pageContents('menu');
+    pageContents();
 }
 
 const pageScroll = () => {
@@ -117,7 +111,3 @@ window.addEventListener('scroll', pageScroll);
 orderBtn.addEventListener('click', orderMenu);
 const navPages = Array.from(document.querySelectorAll('li'));
 navPages.map(item => item.addEventListener('click', pageContents));
-
-
-
-
