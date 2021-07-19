@@ -259,3 +259,9 @@ footer i {
     font-weight: 700;
     text-align: center;
 }
+
+.contact-container {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid red;
+}
