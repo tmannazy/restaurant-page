@@ -20,18 +20,18 @@ const menuPage = () => {
             amount: '₦' + 300
         },
         {
-            item: 'jollof rice',
-            pic: './979b6738e304bf6b8d61.jpeg',
-            amount: '₦' + 100
+            item: 'edikang ikong',
+            pic: './f2dc9de373e0f91ff4bb.jpg',
+            amount: '₦' + 350
         },
         {
-            item: 'beans',
-            pic: './7261376b0f85b2df4def.jpeg',
-            amount: '₦' + 150
+            item: 'okro soup',
+            pic: './71fd64c8456c0e32818a.webp',
+            amount: '₦' + 250
         },
         {
-            item: 'abacha',
-            pic: './78ec4d764f6517ff367b.jpeg',
+            item: 'egusi soup & fufu',
+            pic: './0ff14ebc7194bb20a838.jpg',
             amount: '₦' + 300
         }
     ];
