@@ -21,17 +21,18 @@ const content = document.getElementById('content'),
 
 footerInfo.innerHTML = `Created by Tmannazy <a href='https://www.github.com/tmannazy' target="_blank"><i class="fab fa-github"></i></a>`;
 footer.append(footerInfo);
-content.append(header, homePage(), menuPage(), contactPage());
+content.append(header, homePage());
+// content.append(header, homePage(), menuPage(), contactPage());
 
 
 
 // cacheDOM
-const mainContainer = document.querySelector('main'),
-    menuContainer = document.querySelector('.menu-container'),
-    contactContainer = document.querySelector('.contact-container'),
-    orderBtn = document.querySelector('.welcome-info button'),
+// const mainContainer = document.querySelector('main'),
+//     menuContainer = document.querySelector('.menu-container'),
+//     contactContainer = document.querySelector('.contact-container'),
+const orderBtn = document.querySelector('.welcome-info button'),
     stickyHeader = document.querySelector('header'),
-    body = document.querySelector('body'),
+    body = document.body,
     stickPos = stickyHeader.offsetTop;
 body.insertBefore(footer, body.nextElementSibling);
 
@@ -52,32 +53,53 @@ navItems.forEach(item => {
 
 
 // callBack Functions
-const loadPage = () => {
-    menuContainer.style.display = 'none';
-    contactContainer.style.display = 'none';
-}
+// const loadPage = () => {
+//     menuContainer.style.display = 'none';
+//     contactContainer.style.display = 'none';
+// }
 
 const pageContents = event => {
-    const navClicked = event.target.closest('li');
+    const mainContainer = content.querySelector('main'),
+        menuContainer = content.querySelector('.menu-container'),
+        contactContainer = content.querySelector('.contact-container'),
+        order = event,
+        navClicked = event.target.closest('li');
     if (navClicked.id === 'home') {
-        contactContainer.style.display = 'none';
-        menuContainer.style.display = 'none';
-        mainContainer.style.display = 'block';
-    } else if (navClicked.id === 'menu') {
-        contactContainer.style.display = 'none';
-        mainContainer.style.display = 'none';
-        menuContainer.style.display = 'flex';
+        if (mainContainer === null) {
+            if (menuContainer !== null) {
+                content.removeChild(menuContainer);
+                content.appendChild(homePage());
+            } else if (contactContainer !== null) {
+                content.removeChild(contactContainer);
+                content.appendChild(homePage());
+            }
+        } return;
+    }
+    else if (navClicked.id === 'menu' || order) {
+        if (menuContainer === null) {
+            if (contactContainer !== null) {
+                content.removeChild(contactContainer);
+                content.appendChild(menuPage());
+            } else if (mainContainer !== null) {
+                content.removeChild(mainContainer);
+                content.appendChild(menuPage());
+            } return;
+        }
     } else if (navClicked.id = 'contact') {
-        contactContainer.style.display = 'block';
-        mainContainer.style.display = 'none';
-        menuContainer.style.display = 'none';
+        if (contactContainer === null) {
+            if (mainContainer !== null) {
+                content.removeChild(mainContainer);
+                content.appendChild(contactPage());
+            } else if (menuContainer !== null) {
+                content.removeChild(menuContainer);
+                content.appendChild(contactPage());
+            }
+        } return;
     }
 }
 
 const orderMenu = () => {
-    contactContainer.style.display = 'none';
-    mainContainer.style.display = 'none';
-    menuContainer.style.display = 'flex';
+    pageContents('menu');
 }
 
 const pageScroll = () => {
@@ -91,7 +113,6 @@ const pageScroll = () => {
 }
 
 // bindEvents
-document.addEventListener('DOMContentLoaded', loadPage);
 window.addEventListener('scroll', pageScroll);
 orderBtn.addEventListener('click', orderMenu);
 const navPages = Array.from(document.querySelectorAll('li'));
