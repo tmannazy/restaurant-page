@@ -247,6 +247,7 @@ footer i {
 
 .menu-item:hover {
     box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.92),
+        /* font-family: 'Sacramento', cursive; */
         9px 6px 25px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -261,7 +262,61 @@ footer i {
 }
 
 .contact-container {
-    margin: 0 auto;
-    text-align: center;
+    margin: 40px auto 0;
     border: 1px solid red;
+}
+
+.contact-container h2 {
+    color: #EBD489;
+    text-align: center;
+    padding: 25px;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Sacramento', cursive;
+}
+
+.form-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #EBD489;
+}
+
+.form-label {
+    width: 25%;
+    display: inline-block;
+}
+
+.form-input {
+    width: 75%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.form-container p {
+    text-align: center;
+}
+
+.form-container input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    resize: vertical;
+    color: #a9040a;
+    background-color: #EBD489;
+}
+
+textarea {
+    width: 75%;
+    margin-top: 30px;
+    height: 120px;
+    padding: 10px 40px;
+}
+
+textarea:focus {
+    color: #D8BE07;
+    background-color: #a9040a;
+    font-size: 1rem;
 }
