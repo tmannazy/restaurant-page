@@ -57,7 +57,7 @@ const contactPage = () => {
     contactContainer.className = 'contact-container';
     locationDiv.className = 'location-container';
     h2.textContent = 'Contact Us';
-    locationAddr.textContent = '#1 University of Biafra Road, Enugwu, Biafra.'
+    locationAddr.innerHTML = `<i class="fas fa-map-marker-alt"></i> #1 University of Biafra Road, Enugwu, Biafra.`
     locationDiv.append(locationAddr);
     contactContainer.append(h2, formDiv, locationDiv);
 
