@@ -47,7 +47,7 @@ const contactPage = () => {
         else {
             const p = document.createElement(item);
             p.setAttribute('class', 'form-info');
-            p.textContent = 'we listen when you speak :)';
+            p.textContent = '...we listen when you speak';
             form.append(p);
         }
     });
