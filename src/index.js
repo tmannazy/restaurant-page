@@ -52,7 +52,7 @@ const pageContents = event => {
     const mainContainer = content.querySelector('main'),
         menuContainer = content.querySelector('.menu-container'),
         contactContainer = content.querySelector('.contact-container');
-    if (event === undefined) {
+    if (event === 'order-btn') {
         content.removeChild(mainContainer);
         content.appendChild(menuPage());
     } else {
@@ -93,7 +93,7 @@ const pageContents = event => {
 }
 
 const orderMenu = () => {
-    pageContents();
+    pageContents(orderBtn.className);
 }
 
 const pageScroll = () => {
