@@ -273,6 +273,7 @@ footer i {
     font-size: 3rem;
     font-weight: 900;
     font-family: 'Sacramento', cursive;
+    margin-left: 100px;
 }
 
 .form-container {
@@ -281,11 +282,30 @@ footer i {
     justify-content: center;
     align-content: center;
     color: #EBD489;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.form-container p {
+    padding: 20px;
+    width: 50%;
+    margin-left: 250px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    background: #a9040a;
+    box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.92), 9px 6px 25px 0 rgba(255, 255, 255, 0.5);
+}
+
+form {
+    width: 700px;
 }
 
 .form-label {
     width: 25%;
     display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 .form-input {
@@ -294,29 +314,47 @@ footer i {
     margin-top: 30px;
 }
 
-.form-container p {
-    text-align: center;
-}
-
 .form-container input[type="text"],
 textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px 20px;
     border-radius: 4px;
     resize: vertical;
     color: #a9040a;
     background-color: #EBD489;
+    outline: none;
+    border: none;
+    font-weight: 800;
 }
 
 textarea {
     width: 75%;
     margin-top: 30px;
     height: 120px;
-    padding: 10px 40px;
 }
 
+.form-container input[type="text"]:focus,
 textarea:focus {
     color: #D8BE07;
     background-color: #a9040a;
     font-size: 1rem;
+    font-weight: 900;
+}
+
+.form-container button {
+    margin-top: 30px;
+    padding: 10px 80px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #EBD489;
+    background-color: #a9040a;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.form-container i {
+    margin-right: 7px;
 }
