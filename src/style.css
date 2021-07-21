@@ -7,7 +7,6 @@
     padding: 0;
 }
 
-
 body {
     background: radial-gradient(circle closest-side at 700px 170px, rgba(223, 218, 218, 0.5), rgba(29, 8, 17, 0.9)),
         url('./carolina-marinelli-PkbyxvkGWcU-unsplash.jpg');
@@ -40,11 +39,6 @@ h1 {
     text-transform: capitalize;
     font-family: 'Great Vibes', cursive;
     text-shadow: 8px 5px 4px rgba(9, 0, 20, 0.8);
-    /* font-family: 'Alex Brush', cursive; */
-    /* font-family: 'Fredericka the Great', cursive; */
-    /* font-family: 'Pacifico', cursive; */
-    /* font-family: 'Sacramento', cursive; */
-    /* font-family: 'Satisfy', cursive; */
     font-size: 3.3rem;
     font-weight: 900;
     align-self: center;
@@ -179,7 +173,6 @@ header a:active {
 
 .location-info p {
     margin-bottom: 15px;
-    font-size: 1.2rem;
     color: #D8BE07;
     text-shadow: 5px 13px 8px rgba(9, 0, 20, 0.9);
     padding: 10px;
@@ -361,7 +354,10 @@ textarea:focus {
 }
 
 .form-container button:active {
-    box-shadow: inset 2px 3px 0px rgba(0, 0, 0, 0.1), 2px 5px 3px 5px rgba(255, 255, 255, 0.1), 5px 9px 1px 1px rgba(0, 0, 0, 0.7);
+    box-shadow:
+        inset 2px 3px 0px rgba(0, 0, 0, 0.1),
+        2px 5px 3px 5px rgba(255, 255, 255, 0.1),
+        5px 9px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 .form-container i {
@@ -386,4 +382,62 @@ textarea:focus {
     font-size: 1.4rem;
     font-weight: 800;
     font-family: 'Fredericka the Great', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    header li {
+        display: inline-block;
+        width: 100px;
+    }
+
+    header a {
+        font-size: 1rem;
+        padding: 3px 25px;
+    }
+
+    .welcome-info {
+        width: 370px;
+    }
+
+    .welcome-info p {
+        font-size: 1.6rem;
+    }
+
+    .welcome-info span {
+        font-size: 1rem;
+    }
+
+    .order-btn {
+        font-size: 1.4rem;
+    }
+
+    .location-info {
+        width: 350px;
+        padding: 20px;
+    }
+
+    .location-info p,
+    .location-info li {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
 }
