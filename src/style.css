@@ -260,7 +260,7 @@ footer i {
 }
 
 .contact-container h2 {
-    color: #D8BE07;
+    color: #EBD489;
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -286,6 +286,7 @@ footer i {
     font-weight: 900;
     font-family: 'Satisfy', cursive;
     background: #a9040a;
+    color: #EDE5CC;
 }
 
 form {

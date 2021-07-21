@@ -40,7 +40,7 @@ const contactPage = () => {
         }
         else if (item === 'button') {
             const button = document.createElement(item);
-            button.setAttribute('type', 'button');
+            button.setAttribute('type', 'submit');
             button.innerHTML = `<i class="fas fa-paper-plane"></i>Submit`;
             form.append(button);
         }
