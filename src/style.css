@@ -247,7 +247,6 @@ footer i {
 
 .menu-item:hover {
     box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.92),
-        /* font-family: 'Sacramento', cursive; */
         9px 6px 25px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -263,7 +262,6 @@ footer i {
 
 .contact-container {
     margin: 40px auto 0;
-    border: 1px solid red;
 }
 
 .contact-container h2 {
@@ -343,6 +341,7 @@ textarea:focus {
 
 .form-container button {
     margin-top: 30px;
+    margin-left: 150px;
     padding: 10px 80px;
     outline: none;
     border: none;
@@ -352,9 +351,37 @@ textarea:focus {
     font-weight: bolder;
     font-size: 1rem;
     cursor: pointer;
-    margin-left: 200px;
+}
+
+.form-container button:hover {
+    color: #a9040a;
+    background-color: #D8BE07;
+}
+
+.form-container button:active {
+    box-shadow: inset 2px 3px 0px rgba(0, 0, 0, 0.1), 2px 5px 3px 5px rgba(255, 255, 255, 0.1), 5px 9px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 .form-container i {
     margin-right: 7px;
+}
+
+.location-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.location-container p {
+    margin-left: 150px;
+    color: #D8BE07;
+    text-shadow: 5px 13px 8px rgba(9, 0, 20, 0.9);
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: 'Fredericka the Great', cursive;
 }
