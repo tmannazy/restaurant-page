@@ -458,8 +458,9 @@ textarea:focus {
 
     .form-info {
         font-size: 1rem;
-        margin-left: 120px;
+        margin-left: 70px;
         padding: 9px;
+        width: 70%;
     }
 
     .form-label {
@@ -481,6 +482,11 @@ textarea:focus {
         display: block;
         margin-top: 10px;
         margin-left: 70px;
+    }
+
+    .form-container input[type="text"]:focus,
+    textarea:focus {
+        font-size: 0.8rem;
     }
 
     .form-container button {
