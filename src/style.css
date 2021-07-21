@@ -260,7 +260,7 @@ footer i {
 }
 
 .contact-container h2 {
-    color: #EBD489;
+    color: #D8BE07;
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -274,7 +274,7 @@ footer i {
     display: flex;
     justify-content: center;
     align-content: center;
-    color: #EBD489;
+    color: #D8BE07;
     font-family: 'Fredericka the Great', cursive;
 }
 
@@ -341,7 +341,7 @@ textarea:focus {
     outline: none;
     border: none;
     border-radius: 4px;
-    color: #EBD489;
+    color: #D8BE07;
     background-color: #a9040a;
     font-weight: bolder;
     font-size: 1rem;
