@@ -11,25 +11,43 @@ const contactPage = () => {
 
     formElements.forEach(item => {
         if (item === 'name' || item === 'email') {
-            const formItems = document.createElement('input');
-            formItems.setAttribute('type', 'text');
-            form.appendChild(formItems);
+            const userDetails = document.createElement('input'),
+                label = document.createElement('label'),
+                inputDiv = document.createElement('div'),
+                labelDiv = document.createElement('div');
+            userDetails.setAttribute('type', 'text');
+            userDetails.setAttribute('id', item);
+            label.setAttribute('for', item);
+            labelDiv.setAttribute('class', 'form-label');
+            inputDiv.setAttribute('class', 'form-input');
+            label.textContent = item;
+            labelDiv.appendChild(label);
+            inputDiv.appendChild(userDetails);
+            form.append(labelDiv, inputDiv);
             formDiv.append(form);
         } else if (item === 'message') {
-            const textarea = document.createElement('textarea');
-            form.appendChild(textarea);
+            const textarea = document.createElement('textarea'),
+                label = document.createElement('label'),
+                labelDiv = document.createElement('div');
+            textarea.setAttribute('placeholder', 'Your feedback helps us serve better...')
+            label.setAttribute('for', item);
+            labelDiv.setAttribute('class', 'form-label');
+
+            label.textContent = 'Your Message';
+            labelDiv.appendChild(label);
+            form.append(labelDiv, textarea);
             formDiv.append(form);
         }
         else if (item === 'button') {
             const button = document.createElement(item);
             button.setAttribute('type', 'button');
-            button.textContent = 'Submit';
+            button.innerHTML = `<i class="fas fa-paper-plane"></i>Submit`;
             form.append(button);
         }
         else {
             const p = document.createElement(item);
             p.setAttribute('class', 'form-info');
-            p.textContent = 'we love your words :)';
+            p.textContent = 'we listen when you speak :)';
             form.append(p);
         }
     });
