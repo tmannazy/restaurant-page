@@ -1,4 +1,4 @@
-import { homePage } from "./home";
+import { homePage } from './home';
 import { menuPage } from './menu';
 import { contactPage } from './contact';
 import './jollof.jpeg';
