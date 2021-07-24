@@ -1,13 +1,11 @@
 import { homePage } from './home';
 import { menuPage } from './menu';
 import { contactPage } from './contact';
-import Jollof from './images/jollof.jpeg';
-import Abacha from './images/abacha.jpeg';
-import Beans from './images/beans.jpeg';
-import Edikang from './images/edikang_ikong.jpg';
-import Egusi from './images/egusi_soup.jpg';
-import Okro from './images/okro_soup.webp';
 import './style.css';
+// load assets
+function requireAll(r) { r.keys().forEach(r); }
+requireAll(require.context('./images/', true));
+
 
 // create elements and populate
 const content = document.getElementById('content'),
